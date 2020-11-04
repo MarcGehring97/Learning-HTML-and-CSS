@@ -1,0 +1,26 @@
+body {
+    font-family: "Avenir Black", sans-serif;
+}
+.header {
+    background-image: url("homepage_picture1.png");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.nav {
+    background-image: url("homepage_banner.png");
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
