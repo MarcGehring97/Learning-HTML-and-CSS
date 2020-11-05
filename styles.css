@@ -6,63 +6,67 @@
 body {
     font-family: "Avenir Black", sans-serif;
   }
+  
+nav {
+  background-color: rgba(0,50,98,0.7);
+  background-size: cover;
+  position: fixed;
+  justify-content: flex-start;
+  display: inline;
+  padding: 0 0 20px;
+}
 
-  header {
-    padding: 20px 0;
-    background-image: url("homepage1.png");
-    background-size: cover;
-  }
+nav h1 {
+  font-family: "Star Jedi", arial;
+  font-style: italic;
+  font-weight: bold;
+  color: #FDB515;
+  align-items: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  color: white;
+  font-size: 20px;
+  padding: 100px 50px;
+}
+
+
+header  {
+  padding: 10px 0 20px;
+  display: flex;
+  background-image: url("homepage1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   
-  header .row,
-  footer .row {
-    display: flex;
-  }
+}
+
+
+
+
+
+
+header .jumbotron {
+  display: flex;
+  align-items: center;
   
-  h1 {
-    font-family: "Star Jedi", arial;
-    font-style: italic;
-    font-weight: bold;
-    color: #FDB515;
-    margin: 0;
-  }
+  height: 400px;
+}
   
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  a {
-    padding: 0 20px;
-    margin: 0;
-  }
-  
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    height: 400px;
-  }
-  
-  .jumbotron h2 {
+header .jumbotron h2 {
     font-size: 60px;
     font-weight: 700;
     margin: 0;
-    color: #fff;
+    
   }
   
-  .jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
-  }
+header.jumbotron h3 {
+  padding-top: 30px;
   
-  section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-  }
-  
-  .col-md-6 {
-    margin: 0 0 30px;
-  }
+}
   
   
   footer {
