@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: "Avenir Black", sans-serif;
+  font-family: "Avenir Black", "sans-serif";
   background-color: white;
-  }
+}
   
 nav {
   background-color: rgba(0,50,98,0.7);
@@ -39,8 +39,7 @@ nav li a {
   color: white;
   font-weight: bold;
   font-size: 25px;
-  padding: 0 50px;
-  
+  padding: 0 50px; 
 }
 
 header {
@@ -60,7 +59,7 @@ header div {
 header h2 {
     font-size: 60px;
     color: white;
-  }
+}
 
 header h3 {
   font-size: 60px;
