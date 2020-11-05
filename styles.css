@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Avenir Black", "sans-serif";
+  font-family: Avenir, "sans-serif";
   background-color: white;
 }
   
@@ -13,6 +13,7 @@ nav {
   background-color: rgba(0,50,98,0.7);
   background-size: cover;
   position: fixed;
+  overflow: visible;
 }
 
 nav .row{
@@ -46,14 +47,14 @@ header {
   display: flex;
   background-image: url("homepage1.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   justify-content: flex-start;
-  max-height: 1000px;
+  max-height: auto;
 }
 
 header div {
   border: hidden;
-  margin: 200px 0 300px;
+  margin: 200px 0 245px;
 }
 
 header h2 {
@@ -67,7 +68,7 @@ header h3 {
   padding-left: 60px;
 }
 
-header  h4 {
+header h4 {
   color: white;
   font-size: 20px;
   padding-right: 500px;
@@ -89,7 +90,6 @@ header  h4 {
 }
 
 #section2 {
-  display: block;
   text-align: start;
   justify-content: flex-start;
 }
@@ -101,28 +101,12 @@ header  h4 {
   padding: 0 2px 0 2px;
 }
 
-#section2 img {
-  border: solid black;
-}
-
-.double-border 
-{
-  background-color: #FDB515;
-  border: 10px solid black;
-  padding: 0.5em;
-  width: auto;
-  height: auto;
-  float:left;
-  margin-right: 20px;
-  text-align:center;
-}
-
 #section3 {
   display: block;
   text-align: center;
   justify-content: flex-start;
   align-items: center;
-  height: 250px;
+  height: 200px;
   padding-top: 100px;
 }
 
@@ -134,20 +118,35 @@ header  h4 {
   padding: 2px 6px 2px 6px;
 }
 
+footer {
+  display: flex;
+  background-image: url("homepage2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: flex-start;
+  text-align: center;
+}
 
+footer h1 {
+  font-size: 60px;
+  color: #FDB515;
+  padding-top: 20px;
+}
 
+footer h2 {
+  font-family: "Star Jedi", arial;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  padding-top: 440px;
+}
 
-  footer {
-    font-size: 12px;
-    padding: 20px 0;
-  }
-  
-  footer .col-sm-8 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  footer ul {
-    list-style: none;
-  }
-  
+footer li {
+  display: inline;
+  align-items: center;
+}
+
+#img1 {
+  padding: 50px 0 10px 200px;
+}
