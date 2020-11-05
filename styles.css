@@ -3,8 +3,10 @@
     position: relative;
     top: 1px;
 }
+
 body {
-    font-family: "Avenir Black", sans-serif;
+  font-family: "Avenir Black", sans-serif;
+  background-color: white;
   }
   
 nav {
@@ -14,7 +16,7 @@ nav {
 }
 
 nav .row{
-  padding: 20px 0 20px;
+  padding: 10px 0 10px;
 } 
 
 nav h1 {
@@ -27,6 +29,7 @@ nav h1 {
 }
 
 nav .row li {
+  border: hidden;
   display: inline;
   align-items: center;
   justify-content: flex-end;
@@ -40,21 +43,18 @@ nav li a {
   
 }
 
-header  {
+header {
   display: flex;
   background-image: url("homepage1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 300px;
+  justify-content: flex-start;
+  max-height: 1000px;
 }
 
-header .jumbotron {
-  border-right: hidden;
-  margin-right: 500px;
-  background: none;
-  padding-top: 250px;
-  padding-left: 100px;
-  justify-content: flex-start;
+header div {
+  border: hidden;
+  margin: 200px 0 300px;
 }
 
 header h2 {
@@ -62,19 +62,80 @@ header h2 {
     color: white;
   }
 
-header .jumbotron h3 {
+header h3 {
   font-size: 60px;
   color: #FDB515;
-  padding-left: 50px;
+  padding-left: 60px;
 }
-  
-header .jumbotron h4 {
-  padding-top: 30px;
+
+header  h4 {
   color: white;
   font-size: 20px;
+  padding-right: 500px;
 }
   
-  
+#section1 {
+  display: block;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+}
+#section1 p {
+  font-size: 20px;
+}
+
+#section1 h1 {
+  font-size: 60px;
+}
+
+#section2 {
+  display: block;
+  text-align: start;
+  justify-content: flex-start;
+}
+
+#section2 a {
+  color: black;
+  font-size: 14px;
+  border: solid black;
+  padding: 0 2px 0 2px;
+}
+
+#section2 img {
+  border: solid black;
+}
+
+.double-border 
+{
+  background-color: #FDB515;
+  border: 10px solid black;
+  padding: 0.5em;
+  width: auto;
+  height: auto;
+  float:left;
+  margin-right: 20px;
+  text-align:center;
+}
+
+#section3 {
+  display: block;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  height: 250px;
+  padding-top: 100px;
+}
+
+#section3 a {
+  color: black;
+  font-size: 30px;
+  border: solid white;
+  background-color: #FDB515;
+  padding: 2px 6px 2px 6px;
+}
+
+
 
 
   footer {
