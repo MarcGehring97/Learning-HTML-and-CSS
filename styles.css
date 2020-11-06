@@ -11,9 +11,12 @@ a {
 }
 
 a:active {
-    top: 1px;
+    top: 2px;
 }
   
+a:hover {
+  text-decoration: none;
+}
 nav {
   background-color: rgba(0,50,98,0.7);
   position: fixed;
@@ -22,6 +25,7 @@ nav {
 nav .row {
   padding-top: 1%;
   padding-bottom: 1%;
+  margin-right: 3%;
 }
 
 nav h1 {
@@ -38,6 +42,10 @@ nav a {
   font-weight: bold;
   font-size: 1.25rem;
   margin-left: 5%;
+}
+
+nav a:hover {
+  color: #FDB515;
 }
 
 header {
@@ -97,6 +105,12 @@ header h4 {
   padding: 0 2px 0 2px;
 }
 
+#section2 a:hover {
+  color: white;
+  background-color: #003262;
+  border-color: #003262;
+}
+
 #section2 img {
   max-width: 90%;
   height: auto;
@@ -119,6 +133,10 @@ header h4 {
   border: solid white;
   background-color: #FDB515;
   padding: 2px 6px 2px 6px;
+}
+
+#section3 a:hover {
+  background-color: #FDC15B;
 }
 
 footer {
@@ -175,20 +193,26 @@ footer li {
     min-height: 600px;
   }
   nav a {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-align: right;
+  }
+  nav .row {
+    margin-right: -2%;
   }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
   header {
     min-height: 500px;
   }
   nav a {
-    font-size: 0.6rem;
-    margin-right: 40%;
+    justify-items: center;
+    display: inline-flex;
+  }
+  header div {
+    padding-bottom: 100px;
   }
 }
