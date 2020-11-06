@@ -213,7 +213,7 @@ footer li {
   }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 440px) {
   html {
     font-size: 14px;
   }
