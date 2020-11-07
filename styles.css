@@ -227,7 +227,7 @@ header h4 {
 #section_a_3 p {
   margin-top: 50px;
   color: transparent;
-  padding-bottom: 300px;
+  padding-bottom: 250px;
   background-image: url("Homepage13.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -286,10 +286,6 @@ header h4 {
   background-color: white;
   padding-top: 200px;
 }
-
-
-
-
 
 /*Responsiveness*/
 
