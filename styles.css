@@ -355,6 +355,7 @@ header h4 {
   }
   header div {
     padding-top: 10%;
+    margin-right: 30%;
   }
 }
 
@@ -387,9 +388,8 @@ header h4 {
   header div {
     padding-top: 15%;
   }
-  .changers {
-    padding-bottom: 30%;
-    justify-content: center !important;
+  header h4 {
+    padding-top: 15%;
   }
 }
 
