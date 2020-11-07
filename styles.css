@@ -405,6 +405,8 @@ header h4 {
 /*Animations*/
 /*Animations*/
 
+/* Code adapted from Sharon Ye's website https://www.sharonye.com/ */
+
 .btn-outline {
   text-align: center;
   text-decoration: none;
@@ -531,3 +533,5 @@ header h4 {
   padding-bottom: 10%;
   justify-content: center !important;
 }
+
+/* Code adapted from Sharon Ye's website https://www.sharonye.com/ */

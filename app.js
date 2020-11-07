@@ -1,3 +1,4 @@
+// Code adapted from Sharon Ye's website https://www.sharonye.com/ 
 var speed = 'medium';
 
 $(document).ready(function() {
@@ -105,3 +106,5 @@ $(document).ready(function() {
   setInterval(changeWord, 2500);
 
 });
+
+// Code adapted from Sharon Ye's website https://www.sharonye.com/
