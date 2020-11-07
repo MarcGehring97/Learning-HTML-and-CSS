@@ -336,6 +336,9 @@ header h4 {
   footer h3 {
     padding-top: 570px;
   }
+  header h4 {
+    padding-top: 10%;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -357,6 +360,9 @@ header h4 {
   header div {
     padding-top: 10%;
     margin-right: 30%;
+  }
+  header h4 {
+    padding-top: 10%;
   }
 }
 
@@ -390,7 +396,7 @@ header h4 {
     padding-top: 15%;
   }
   header h4 {
-    padding-top: 15%;
+    padding-top: 10%;
   }
 }
 
