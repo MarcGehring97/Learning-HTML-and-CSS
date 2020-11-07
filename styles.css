@@ -33,7 +33,7 @@ nav .row {
 }
 
 nav h1 {
-  font-family: "Star Jedi", sans-serif;
+  font-family: "Star Jedi", Bangers;
   font-style: italic;
   font-weight: bold;
   color: #FDB515;
@@ -73,7 +73,7 @@ footer h1 {
 }
 
 footer h3 {
-  font-family: "Star Jedi", sans-serif;
+  font-family: "Star Jedi", bangers;
   font-style: italic;
   font-weight: bold;
   font-size: 2.5rem;
