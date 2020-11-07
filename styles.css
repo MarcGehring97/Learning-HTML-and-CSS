@@ -85,6 +85,7 @@ header h4 {
   align-items: center;
   height: 250px;
 }
+
 #section1 p {
   font-size: 1rem;
 }
@@ -154,7 +155,6 @@ footer div {
 footer h1 {
   font-size: 3rem;
   color: #FDB515;
-  
 }
 
 footer h2 {
@@ -258,7 +258,7 @@ footer li {
   }
   footer h2 {
     padding-top: 490px;
-  
+  }
 }
 
 @media all and (max-width: 440px) {
@@ -278,6 +278,6 @@ footer li {
     margin-top: 10%;
   }
   footer h2 {
-    padding-top: 560px;
+    padding-top: 540px;
   }
 }
