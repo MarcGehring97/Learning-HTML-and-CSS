@@ -236,6 +236,7 @@ header h4 {
 #btn1 .btn-outline{
   background-color: #FDB515;
   font-weight: bold;
+  border-color: transparent;
 }
 
 #btn1 .btn-outline:hover {
