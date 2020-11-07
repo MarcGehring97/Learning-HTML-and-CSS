@@ -387,6 +387,10 @@ header h4 {
   header div {
     padding-top: 15%;
   }
+  .changers {
+    padding-bottom: 15%;
+    justify-content: center !important;
+  }
 }
 
 /*Animations*/
