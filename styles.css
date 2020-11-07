@@ -270,7 +270,7 @@ header h4 {
 #section_c_1 {
   color: transparent;
   background-color: white;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 /*Resume*/
@@ -536,7 +536,7 @@ header h4 {
 
 /* Code adapted from Sharon Ye's website https://www.sharonye.com/ */
 
-/* Code adapted from Ananyse Jain's website https://www.ananya.design */
+/* Code adapted from Ananya Jain's website https://www.ananya.design */
 
 .back-to-top {
   position: fixed;
@@ -554,14 +554,24 @@ header h4 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #34b7a7;
-  color: #fff;
+  background-image: url("images/button1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #3dc8b7;
-  color: #fff;
+  background-image: url("images/button1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-/* Code adapted from Ananyse Jain's website https://www.ananya.design */
+/* Code adapted from Ananya Jain's website https://www.ananya.design */
+
+#map a {
+  color: #FDB515;
+}
+
+#map a:hover {
+  color: #FDD15B;
+}
