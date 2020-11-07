@@ -157,13 +157,13 @@ footer h1 {
   color: #FDB515;
 }
 
-footer h2 {
+footer h3 {
   font-family: "Star Jedi", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 2.5rem;
   color: black;
-  padding-top: 470px;
+  padding-top: 515px;
 }
 
 footer ul {
@@ -182,7 +182,6 @@ footer li {
   background-repeat: no-repeat;
   background-size: contain;
   font-size: 2.5rem;
-  
 }
 
 #Filler2 {
@@ -201,8 +200,48 @@ footer li {
   font-size: 2.5rem;
 }
 
+#Filler1:hover {
+  color: transparent;
+  background-image: url("Homepage8.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 2.5rem;
+}
+
+#Filler2:hover {
+  color: transparent;
+  background-image: url("Homepage9.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 2.5rem;
+} 
+
+#Filler3:hover {
+  color: transparent;
+  background-image: url("Homepage10.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 2.5rem;
+}
+
+footer div div {
+  position: relative;
+  top: 50px;
+  left: 700px;
+}
+
 #img1 {
-  padding: 50px 0 10px 200px;
+  color: transparent;
+  background-image: url("Homepage11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#img1:hover {
+  color: transparent;
+  background-image: url("Homepage12.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media all and (max-width: 1100px) {
@@ -219,8 +258,8 @@ footer li {
   #Filler1, #Filler2, #Filler3 {
     font-size: 2rem;
   }
-  footer h2 {
-  padding-top: 500px;
+  footer h3 {
+  padding-top: 550px;
   }
 }
 
@@ -238,8 +277,8 @@ footer li {
   nav .row {
     margin-right: -2%;
   }
-  footer h2 {
-    padding-top: 520px;
+  footer h3 {
+    padding-top: 570px;
   }
 }
 
@@ -256,8 +295,8 @@ footer li {
   footer h1 {
     margin-top: 10%;
   }
-  footer h2 {
-    padding-top: 500px;
+  footer h3 {
+    padding-top: 550px;
   }
 }
 
@@ -277,8 +316,8 @@ footer li {
   footer h1 {
     margin-top: 10%;
   }
-  footer h2 {
-    padding-top: 540px;
+  footer h3 {
+    padding-top: 590px;
   }
   footer li {
     padding-right: 3%;
