@@ -220,7 +220,7 @@ footer li {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100px;
+  height: 75px;
 }
 
 #section_a_3 p {
@@ -453,7 +453,7 @@ footer li {
   flex-direction: column;
   text-align: right;
 }
-.section_pic_bear {
+.section_pibear {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
