@@ -84,7 +84,7 @@ footer h3 {
   font-weight: bold;
   font-size: 2.5rem;
   color: black;
-  padding-top: 515px;
+  padding-top: 520px;
 }
 
 footer ul {
@@ -93,8 +93,8 @@ footer ul {
 
 footer li {
   display: inline;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
 }
 
 #Filler1 {
@@ -214,14 +214,20 @@ footer li {
   margin-bottom: 10%;
 }
 
-#section_a_3 p {
-  margin-top: 50px;
-  color: transparent;
-  padding-bottom: 250px;
+#section_a_3 {
+  text-align: center;
   background-image: url("images/Homepage13.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 75px;
+}
+
+#section_a_3 p {
+  color: white;
+  padding-top:1%;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 #section_a_4 {
@@ -266,16 +272,92 @@ footer li {
   padding-top: 200px;
 }
 
-/*Inspiration*/
-/*Inspiration*/
-/*Inspiration*/
-/*Inspiration*/
+/*About*/
+/*About*/
+/*About*/
+/*About*/
 
 #section_c_1 {
   color: transparent;
   background-color: white;
   padding-top: 100px;
 }
+
+/* Code adapted from Ananya Jain's website https://www.ananya.design */
+
+#about {
+  background-color: white;
+}
+
+#about .btn-resume {
+  font-family: Avenir, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  border-radius: 50px;
+  color: #fff;
+  background: #34b7a7;
+  margin-top: 40px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about p {
+  color: #111;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: #34b7a7;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: Avenir;
+  color: #222222;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #f3f3f3;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #FDB515;
+}
+
+/* Code adapted from Ananya Jain's website https://www.ananya.design */
 
 /*Resume*/
 /*Resume*/
@@ -287,6 +369,124 @@ footer li {
   background-color: white;
   padding-top: 200px;
 }
+
+/* Code adapted from Sharon Ye's website https://www.sharonye.com/ */
+
+#map a {
+  color: #FDB515;
+}
+
+#map a:hover {
+  color: #FDD15B;
+}
+
+
+.landing_r {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #4192E9;
+}
+
+.resumelanding {
+  width: 20rem;
+  margin-top: -1.5rem;
+  height: 20rem;
+}
+
+.floatarrow {
+  animation: floata 2s ease-in-out infinite;
+  color:#8DC2FC;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  /* text-shadow: white 0px 0px 30px; */
+}
+
+@keyframes floata {
+  0% {
+    transform: translatey(0rem);
+  }
+  50% {
+    transform: translatey(-1rem);
+  }
+  100% {
+    transform: translatey(0rem);
+  }
+}
+
+.resume_title {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.resume_description {
+  color: white;
+  font-size: 0.8rem;
+}
+.section_titles {
+  font-size: 2.5rem;
+  color: #484848;
+}
+.section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.experiences {
+  margin-top: 5rem;
+  overflow-x: hidden;
+
+}
+.bearpic {
+  width: 14rem;
+  height: 14rem;
+}
+.section_text {
+  text-align: left;
+  color: #484848;
+}
+.section_pic {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+.section_pic_bear {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+}
+.section_divider {
+  width: 100%;
+  transform: rotate(3deg);
+}
+.dividerrow {
+  margin-top: -1.5rem;
+}
+.experience_titles {
+  font-size: 1.25rem;
+  color: #F9B5AA;
+}
+
+.descriptions {
+  text-align: left;
+  font-size: 0.65rem;
+}
+.keywords {
+  color: #F9B5AA;
+}
+.role {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #C4C4C4;
+  text-align: right;
+}
+
+/* Code adapted from Sharon Ye's website https://www.sharonye.com/ */
 
 /*Visitor's Book*/
 /*Visitor's Book*/
@@ -425,6 +625,22 @@ footer li {
   /* -moz-transition: .5s ease-in-out; */
   /* -o-transition: .5s ease-in-out; */
   /* transition: .5s ease-in-out; */
+}
+
+.btn-outline-inner {
+  color: black;
+}
+
+.btn-outline:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.btn-outline:hover .btn-outline-inner {
+  font-weight:bold;
+  color: black;
+  background-color: white;
 }
 
 .btn-outline:hover {
@@ -581,10 +797,3 @@ footer li {
 
 /* Code adapted from Ananya Jain's website https://www.ananya.design */
 
-#map a {
-  color: #FDB515;
-}
-
-#map a:hover {
-  color: #FDD15B;
-}

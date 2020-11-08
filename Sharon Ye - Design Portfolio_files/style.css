@@ -1,0 +1,778 @@
+body, html {
+  font-family: 'Courier Prime', monospace !important;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+@media all and (min-width: 992px) {
+  body, html {
+      font-size: 20px;
+  }
+
+}
+
+
+@media all and (max-width: 992px) {
+  body, html {
+      font-size: 14px;
+  }
+  .section_pic {
+    align-items: center !important;
+  }
+  .aboutme {
+    margin: 5rem 25% 0 25%;
+  }
+  .resumewords {
+    text-align: center;
+    margin: 0 25% 0 25%;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  body, html {
+      font-size: 14px;
+  }
+  .section_pic {
+    align-items: center !important;
+    margin: 0 !important;
+    /* display: none !important; */
+  }
+  .flower {
+    display: none !important;
+  }
+  .aboutme {
+    margin: 5rem 15% 0 15%;
+  }
+  .resumewords {
+    text-align: center;
+    margin: 0 5% 0 5%;
+  }
+  .landingtitle {
+    font-size: 3rem !important;
+  }
+  .word {
+    font-size: 3rem !important;
+  }
+
+  .coffee {
+    display: none;
+  }
+
+  .project_desc {
+    display: none;
+  }
+
+  .resume_title {
+    font-size: 10vw !important;
+  }
+  .bearpic {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+  .section_titles {
+    font-size: 2rem !important;
+  }
+  .card-body {
+    display: none !important;
+  }
+  .portfolio_img {
+      opacity: 1 !important;
+  }
+  .btn-outline {
+    padding: 0.7rem !important;
+  }
+  .potfolio_container {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+
+}
+
+
+p {
+  font-size: 0.75rem;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.landing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFCA10;
+  overflow: hidden;
+}
+
+.landingrow {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  /* max-width: 100%; */
+  width: 100% !important;
+  align-items: center !important;
+  margin: 0 !important
+}
+
+.landingtitle {
+  /* font-size: 3.5rem; */
+  font-size: 5vw;
+  color: #484848;
+}
+.landingtext {
+  font-size: 0.8rem;
+  color: #484848;
+  margin-top: 5rem;
+  line-height: 1.2rem;
+}
+
+.nav {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #31393C 0%, #31393C 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0em;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+}
+.underline--magical:hover{
+  background-size: 100% 20%;
+}
+.navlinks{
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
+
+.navlinks:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+.cursivename {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 11rem;
+  height: auto;
+  transition: 0.3s;
+}
+.flowergirl {
+  height: 23.5rem;
+  width: auto;
+  margin-top: -2.75px;
+  margin-left: 1rem;
+  -webkit-transform: scaleX(-1);
+  transform: rotate(-15deg) scaleX(-1);
+}
+.coffeebeans{
+  height: 20rem;
+  margin-top: -100%;
+  margin-left: 1.5rem;
+}
+.coffee{
+  position: absolute;
+}
+
+/* word that changes */
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(1.25rem);
+  transform-origin: 50% 50% 1.25rem;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.word {
+  position: absolute;
+  opacity: 0;
+  /* left:0; */
+  /* font-size: 4rem; */
+  font-size: 5vw;
+  color: white;
+  margin-top: -1rem;
+}
+.changers {
+  width: 100%;
+  text-align: center !important;
+  display: flex;
+  justify-content: center !important;
+}
+/* word that changes */
+
+/* ~~~~~~~~~~~~~ END OF LANDING ~~~~~~~~~~~~~ */
+
+.portfolio-title {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.title-text {
+  font-size: 3.5rem;
+  color: #484848;
+}
+.portfolio-description {
+  text-align: center;
+}
+
+.portfolio_img {
+  max-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.graphics {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+
+.imagerows {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-right: 0 !important;
+}
+
+.imagecols {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imagecols2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    /* margin-left: -100%; */
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-title {
+    font-size: 0.75rem;
+    color: #4d4d4d;
+    visibility: hidden;
+    transition-delay: 0s;
+    height: 100%;
+    /* overflow: scroll; */
+    padding: 2.5rem;
+}
+
+
+.imagecols:hover .portfolio_img {
+    opacity: .2;
+}
+
+.imagecols:hover .card-body .card-title {
+    visibility: visible;
+    transition-delay: 0.25s;
+}
+
+.imgtitle {
+  font-size: 1.25rem !important;
+}
+
+#traditionallink {
+  font-size: .7rem;
+  color: #A4A4A4;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.trad_portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tradart {
+  height: 9rem;
+  margin: 0.3rem;
+}
+
+
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project_photo {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border: 1px solid #E3E3E3;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+.line {
+  width: 100%;
+  height: 0.01rem;
+  background-color: #E3E3E3;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.btn-outline-contain {
+  text-align: center;
+}
+
+.btn-outline {
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #FFCA10;
+  color: #FFCA10;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  display: inline-block;
+  /* -webkit-transition: .5s ease-in-out; */
+  /* -moz-transition: .5s ease-in-out; */
+  /* -o-transition: .5s ease-in-out; */
+  /* transition: .5s ease-in-out; */
+}
+
+.btn-outline:hover {
+  text-decoration: none;
+  color: #FFCA10;
+}
+.btn-outline:hover .btn-outline-inner {
+  font-weight:bold;
+  color: #FFCA10;
+  /* -webkit-transition: .5s ease-in-out; */
+  /* -moz-transition: .5s ease-in-out; */
+  /* -o-transition: .5s ease-in-out; */
+  /* transition: .5s ease-in-out; */
+}
+.btn-outline:hover .line-1 {animation: outline1 2s infinite ease-in-out;}
+.btn-outline:hover .line-2 {animation: outline2 2s infinite ease-in-out;}
+.btn-outline:hover .line-3 {animation: outline3 2s infinite ease-in-out;}
+.btn-outline:hover .line-4 {animation: outline4 2s infinite ease-in-out;}
+.line-1 {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 3px;
+	background-color: #FFCA10;
+	left: 0;
+	bottom: 0;
+}
+.line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: #FFCA10;
+  left: 0;
+  top: 0;
+}
+.line-3 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  background-color: #FFCA10;
+  right: 0;
+  top: 0;
+}
+.line-4 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  background-color: #FFCA10;
+  right: 0;
+  bottom: 0;
+}
+@keyframes outline1 {
+  0% {height: 100%; bottom: 0;}
+  54% {height: 0; bottom: 100%;}
+  55% {height: 0; bottom: 0;}
+  100% {height: 100%; bottom: 0;}
+}
+@keyframes outline2 {
+  0% {width: 0;left: 0;}
+  50% {width: 100%; left: 0;}
+  100% {width: 0; left: 100%;}
+}
+
+@keyframes outline3 {
+  0% {height: 100%; top: 0;}
+  54% {height: 0; top: 100%;}
+  55% {height: 0; top: 0;}
+  100% {height: 100%; top: 0;}
+}
+
+@keyframes outline4 {
+  0% { width: 0; right: 0;}
+  55% {width: 100%; right: 0;}
+  100% {width: 0; right: 100%;}
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.landing_r {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #4192E9;
+}
+
+.resumelanding {
+  width: 20rem;
+  margin-top: -1.5rem;
+  height: 20rem;
+}
+
+.floatarrow {
+  animation: floata 2s ease-in-out infinite;
+  color:#8DC2FC;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  /* text-shadow: white 0px 0px 30px; */
+}
+
+@keyframes floata {
+  0% {
+    transform: translatey(0rem);
+  }
+  50% {
+    transform: translatey(-1rem);
+  }
+  100% {
+    transform: translatey(0rem);
+  }
+}
+
+.resume_title {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.resume_description {
+  color: white;
+  font-size: 0.8rem;
+}
+.section_titles {
+  font-size: 2.5rem;
+  color: #484848;
+}
+.section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.experiences {
+  margin-top: 5rem;
+  overflow-x: hidden;
+
+}
+.bearpic {
+  width: 14rem;
+  height: 14rem;
+}
+.section_text {
+  text-align: left;
+  color: #484848;
+}
+.section_pic {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+}
+.section_pic_bear {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+}
+.section_divider {
+  width: 100%;
+  transform: rotate(3deg);
+}
+.dividerrow {
+  margin-top: -1.5rem;
+}
+.experience_titles {
+  font-size: 1.25rem;
+  color: #F9B5AA;
+}
+
+.descriptions {
+  text-align: left;
+  font-size: 0.65rem;
+}
+.keywords {
+  color: #F9B5AA;
+}
+.role {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #C4C4C4;
+  text-align: right;
+}
+.skills {
+  font-size: 0.65rem;
+  color: #484848;
+}
+.progress {
+  height: 0.8rem !important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ RESUME PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.landing_a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.nav_black {
+  color: black !important;
+}
+
+.fa {
+  /* padding: 0.6rem; */
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  vertical-align: middle;
+  line-height: 2rem !important;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: white !important;
+    text-decoration: none;
+}
+
+.fa-google {
+  background: #FF4B4B;
+  color: white !important;
+}
+.fa-linkedin {
+  background: #5FAFFF;
+  color: white !important;
+}
+.fa-instagram {
+  background: #FFB15F;
+  color: white !important;
+}
+.fa-facebook {
+  background: #4C7DFF;
+  color: white !important;
+}
+
+.contactlinks:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* floating thing in about */
+.floating {
+  margin-top: 1rem;
+  width: 17.5rem;
+}
+
+.floating p {
+  transform: translatey(0rem);
+  animation: float 5s ease-in-out infinite;
+  mix-blend-mode: multiply;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #FFCE1E;
+  border-radius: 0.55rem;
+  box-shadow: 1rem 1rem #BAAB98;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floating p:after {
+  transform: translatey(0rem);
+  animation: float2 5s ease-in-out infinite;
+  content: ".";
+  font-weight: bold;
+  -webkit-text-fill-color: #FFCE1E;
+  text-shadow: 1.1rem 1.1rem #B0A3A7;
+  text-align: left;
+  font-size: 2.75rem;
+  width: 2.75rem;
+  height: .55rem;
+  line-height: 1.5rem;
+  border-radius: .55rem;
+  background-color: #FFCE1E;
+  position: absolute;
+  display: block;
+  bottom: -1.5rem;
+  left: 0;
+  box-shadow: 1.1rem 1.1rem #BAAB98;
+  z-index: -2;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0rem);
+  }
+  50% {
+    transform: translatey(1rem);
+  }
+  100% {
+    transform: translatey(0rem);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    line-height: 1.5rem;
+    transform: translatey(0rem);
+  }
+  55% {
+    transform: translatey(-1rem);
+  }
+  60% {
+    line-height: 0.5rem;
+  }
+  100% {
+    line-height: 1.5rem;
+    transform: translatey(0rem);
+  }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ KLEAN KART PROJECT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ KLEAN KART PROJECT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ KLEAN KART PROJECT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ KLEAN KART PROJECT PAGE !! ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.project_landing {
+  padding-top: 11rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project_row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.detail_icon {
+  height: 1rem;
+  width: 1rem;
+}
+.tooltip-inner {
+  background-color: #FFCA10 !important;
+  color: #FFCA10 ;
+  font-size: 0.8rem;
+}
+.tooltip .arrow:before {
+    border-top-color: #FFCA10 !important;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #FFCA10;
+}
+.project_sectiontitle {
+  display: flex;
+  width: 100%;
+  color: #CDCDCD;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.project_section {
+  line-height: 1.5rem;
+}
+ul {
+  list-style-type: circle;
+}
+.projectimages {
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.prototype {
+    height:20rem;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prototype > video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* /////////////// footer /////////////// */
+.footer {
+  margin-top: 7.5rem;
+  height: 5rem;
+  width: 100%;
+  background-color: #FFCE1E;
+}
