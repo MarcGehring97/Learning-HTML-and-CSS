@@ -543,6 +543,10 @@ footer li {
   #section_a_0 h4 {
     padding-top: 10%;
   }
+  #spotify {
+    text-align: center;
+    display: block;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -567,6 +571,10 @@ footer li {
   }
   #section_a_0 h4 {
     padding-top: 10%;
+  }
+  #spotify {
+    text-align: center;
+    display: block;
   }
 }
 
@@ -601,6 +609,10 @@ footer li {
   }
   #section_a_0 h4 {
     padding-top: 10%;
+  }
+  #spotify {
+    text-align: center;
+    display: block;
   }
 }
 
