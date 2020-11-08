@@ -235,20 +235,24 @@ header h4 {
 
 #btn1 .btn-outline{
   background-color: #FDB515;
-  
+  border-color: transparent;
+}
+
+#btn1 .btn-outline-inner{
+  background-color: #FDB515;
   border-color: transparent;
 }
 
 #btn1 .btn-outline:hover {
   text-decoration: none;
   color: black;
-  background-color: #FDB515;
+  background-color: #FDD15B;
 }
 
 #btn1 .btn-outline:hover .btn-outline-inner {
   font-weight: bolder;
   color: black;
-  background-color: #FDB515;
+  background-color: #FDD15B;
 }
 
 /*Projects*/
@@ -558,13 +562,24 @@ header h4 {
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.4s;
+  position: relative;
+  color: transparent;
 }
 
 .back-to-top i:hover {
-  background-image: url("images/button1.png");
+  background-image: url("images/button2.png");
   background-repeat: no-repeat;
   background-size: contain;
+  color: transparent;
 }
+
+.back-to-top i:active {
+  background-image: url("images/button2.png");
+  top: 2px;
+  color: transparent;
+}
+
+
 
 /* Code adapted from Ananya Jain's website https://www.ananya.design */
 
