@@ -25,7 +25,7 @@ a:hover {
 /*Navigation Bar*/
 
 nav {
-  background-color: rgba(0,50,98,0.7);
+  background-color: rgba(0,50,98,0.8);
   position: fixed;
 } 
 
@@ -163,7 +163,7 @@ footer li {
 /*Home Page*/
 /*Home Page*/
 
-header {
+#section_a_0 {
   background-image: url("images/homepage1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,17 +171,17 @@ header {
   background-position: bottom;
 }
 
-header div {
+#section_a_0 div {
   padding-top: 5%;
 }
 
-header h2 {
+#section_a_0 h2 {
     width:70%;
     font-size: 3rem;
     color: white;
 }
 
-header h4 {
+#section_a_0 h4 {
   color: white;
   font-size: 1rem;
   margin-right: 30%;
@@ -308,7 +308,7 @@ header h4 {
   html {
     font-size: 18px;
   }
-  header {
+  #section_a_0 {
     min-height: 600px;
   }
   nav a {
@@ -327,7 +327,7 @@ header h4 {
   html {
     font-size: 16px;
   }
-  header {
+  #section_a_0 {
     min-height: 600px;
   }
   nav a {
@@ -340,7 +340,7 @@ header h4 {
   footer h3 {
     padding-top: 570px;
   }
-  header h4 {
+  #section_a_0 h4 {
     padding-top: 10%;
   }
 }
@@ -349,10 +349,10 @@ header h4 {
   html {
     font-size: 16px;
   }
-  header {
+  #section_a_0 {
     min-height: 500px;
   }
-  header div {
+  #section_a_0 div {
     padding-bottom: 100px;
   }
   footer h1 {
@@ -361,11 +361,11 @@ header h4 {
   footer h3 {
     padding-top: 550px;
   }
-  header div {
+  #section_a_0 div {
     padding-top: 10%;
     margin-right: 30%;
   }
-  header h4 {
+  #section_a_0 h4 {
     padding-top: 10%;
   }
 }
@@ -374,13 +374,13 @@ header h4 {
   html {
     font-size: 14px;
   }
-  header {
+  #section_a_0 {
     min-height: 500px;
   }
   nav a {
     font-size: 0.8rem;
   }
-  header div {
+  #section_a_0 div {
     padding-bottom: 100px;
   }
   footer h1 {
@@ -396,10 +396,10 @@ header h4 {
   #section_a_1 {
     height: 170px;
   }
-  header div {
+  #section_a_0 div {
     padding-top: 15%;
   }
-  header h4 {
+  #section_a_0 h4 {
     padding-top: 10%;
   }
 }
