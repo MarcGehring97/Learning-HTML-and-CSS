@@ -318,7 +318,7 @@ footer li {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #34b7a7;
+  color: black;
 }
 
 .about .content p:last-child {
@@ -385,22 +385,13 @@ footer li {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #4192E9;
+  background-color: white;
 }
 
 .resumelanding {
   width: 20rem;
   margin-top: -1.5rem;
   height: 20rem;
-}
-
-.floatarrow {
-  animation: floata 2s ease-in-out infinite;
-  color:#8DC2FC;
-  width: 100%;
-  text-align: center;
-  font-size: 0.75rem;
-  /* text-shadow: white 0px 0px 30px; */
 }
 
 @keyframes floata {
@@ -415,18 +406,10 @@ footer li {
   }
 }
 
-.resume_title {
-  font-size: 3.5rem;
-  color: white;
-}
 
-.resume_description {
-  color: white;
-  font-size: 0.8rem;
-}
 .section_titles {
   font-size: 2.5rem;
-  color: #484848;
+  color: black;
 }
 .section {
   display: flex;
@@ -440,12 +423,12 @@ footer li {
 
 }
 .bearpic {
-  width: 14rem;
-  height: 14rem;
+  width: 8rem;
+  height: 8rem;
 }
 .section_text {
   text-align: left;
-  color: #484848;
+  color: black;
 }
 .section_pic {
   display: flex;
@@ -468,21 +451,21 @@ footer li {
   margin-top: -1.5rem;
 }
 .experience_titles {
-  font-size: 1.25rem;
-  color: #F9B5AA;
+  font-size: 1rem;
+  color: #003262;
 }
 
 .descriptions {
   text-align: left;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 .keywords {
-  color: #F9B5AA;
+  color: #FDB515;
 }
 .role {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   font-style: italic;
-  color: #C4C4C4;
+  color: black;
   text-align: right;
 }
 
@@ -497,6 +480,23 @@ footer li {
   color: transparent;
   background-color: white;
   padding-top: 200px;
+}
+
+#section_e_2 {
+  text-align: center;
+  background-image: url("images/Homepage13.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+}
+
+#section_e_2 p {
+  color: white;
+  padding-top:1%;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 5%;
 }
 
 /*Responsiveness*/
@@ -520,6 +520,10 @@ footer li {
   }
   footer h3 {
   padding-top: 550px;
+  }
+  .bearpic {
+    width: 8rem;
+    height: 8rem;
   }
 }
 
@@ -546,6 +550,10 @@ footer li {
   #spotify {
     text-align: center;
     display: block;
+  }
+  .bearpic {
+    width: 6rem;
+    height: 6rem;
   }
 }
 
