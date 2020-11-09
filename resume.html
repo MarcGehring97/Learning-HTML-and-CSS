@@ -11,12 +11,13 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Marc Gehring - Resume</title>
+    
 </head>
 
 <body>
 
-  <div class="loader_bg">
-    <div class="loader"></div>
+  <div id="loading">
+    <img id="loading-image" src="images/ajax-loader.gif" alt="Loading..." />
   </div>
     
   <header id="header" class="fixed-top">
@@ -354,13 +355,12 @@ Consisting of two pillars, namely financial literacy skills and expert knowledge
   <script src="./About - Ananya Jain_files/main.js"></script>
 
   <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
-  
-  <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-      }, 1500);
-    </script>
+
+  <script>
+    $(window).load(function() {
+      $('#loading').hide();
+    });
+  </script>
 
   </body>
 </html>

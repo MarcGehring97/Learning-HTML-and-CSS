@@ -13,10 +13,7 @@
     <title>Marc Gehring - About</title>
 
     <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
-    <!-- Google Fonts -->
+  
     <link href="./About - Ananya Jain_files/css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -28,14 +25,14 @@
     <link href="./About - Ananya Jain_files/aos.css" rel="stylesheet">
 
     <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
+
+    <script src="jquery-2.1.4.js"></script>
   
 </head>
 
 <body>
 
-  <div class="loader_bg">
-    <div class="loader"></div>
-  </div>
+  
     
   <header id="header" class="fixed-top">
     <nav class="container-fluid">
@@ -525,13 +522,15 @@
   <script src="./About - Ananya Jain_files/main.js"></script>
 
   <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
-
-  <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      setTimeout(function(){
-        $('.loader_bg').fadeToggle();
-      }, 1500);
-    </script>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  
+  <script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
 
   </body>
 </html>
