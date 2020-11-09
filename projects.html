@@ -14,7 +14,11 @@
 </head>
 
 <body>
-    
+
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+
   <header id="header" class="fixed-top">
     <nav class="container-fluid">
       <div class="row">
@@ -48,16 +52,6 @@
     </div>
   </section>
 
-  <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
-
-  <h1 class="back-to-top" style="display: none;"><i class="bx bx-up-arrow-alt"></i></h1>
-  <script src="./About - Ananya Jain_files/jquery.min.js"></script>
-  <script src="./About - Ananya Jain_files/jquery.easing.min.js"></script>
-  <script src="./About - Ananya Jain_files/jquery.waypoints.min.js"></script>
-  <script src="./About - Ananya Jain_files/venobox.min.js"></script>
-  <script src="./About - Ananya Jain_files/main.js"></script>
-
-  <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
   <br><br><br><br><br>
   <footer class="jumbotron">
     <div class="container-fluid">
@@ -71,6 +65,24 @@
       </ul>
     </div>
   </footer>  
+
+  <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
+
+  <h1 class="back-to-top" style="display: none;"><i class="bx bx-up-arrow-alt"></i></h1>
+  <script src="./About - Ananya Jain_files/jquery.min.js"></script>
+  <script src="./About - Ananya Jain_files/jquery.easing.min.js"></script>
+  <script src="./About - Ananya Jain_files/jquery.waypoints.min.js"></script>
+  <script src="./About - Ananya Jain_files/venobox.min.js"></script>
+  <script src="./About - Ananya Jain_files/main.js"></script>
+
+  <!-- Code adapted from Ananya Jain's website https://www.ananya.design -->
+
+  <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+      }, 1500);
+    </script>
 
   </body>
 </html>
