@@ -333,11 +333,11 @@ footer li {
 }
 
 #project1 a {
-  color: #FDB515; 
+  color: #FDB515 !important; 
 }
 
 #project1 a:hover, #project1 a:active {
-  color: #FDD15B;
+  color: #FDD15B !important;
 }
 
 
@@ -431,6 +431,16 @@ footer li {
 /*Resume*/
 /*Resume*/
 /*Resume*/
+
+#body_resume a{
+  color: #003262; 
+}
+
+
+#body_resume a:hover, #body_resume a:active {
+  color: #4e6c88;
+}
+
 
 #section_d_1 {
   color: transparent;
