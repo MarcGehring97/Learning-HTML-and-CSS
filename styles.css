@@ -710,7 +710,6 @@ footer li {
   footer {
     height: 800px;
   }
-  
   footer h1 {
     margin-top: -3%;
   }
@@ -718,7 +717,6 @@ footer li {
     font-size: 1.3rem;
   }
 }
-
 @media all and (max-width: 1450px) {
   footer {
     height: 700px;
@@ -731,13 +729,15 @@ footer li {
     font-size: 1.3rem;
   }
 }
-
 @media all and (max-width: 1300px) {
   footer h1 {
     margin-top: -5%;
   }
   #section_a_3 p {
     font-size: 1.3rem;
+  }
+  #preloader h1{
+    right: calc(28%);
   }
   
 }
@@ -754,6 +754,9 @@ footer li {
   #section_a_3 p {
     font-size: 1.3rem;
   }
+  #preloader h1{
+    right: calc(29%);
+  }
 }
 
 @media all and (max-width: 1150px) {
@@ -765,6 +768,9 @@ footer li {
   }
   #section_a_3 p {
     font-size: 1.3rem;
+  }
+  #preloader h1{
+    right: calc(30%);
   }
 }
 
@@ -797,6 +803,9 @@ footer li {
   }
   #navrow {
     padding-top: 5%;
+  }
+  #preloader h1{
+    right: calc(30%);
   }
 }
 
@@ -833,7 +842,9 @@ footer li {
   #programming {
     padding-top: 5%;
   }
-  
+  #preloader h1{
+    right: calc(27%);
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -873,6 +884,9 @@ footer li {
   .descriptions {
     position:relative;
     right: 80px;
+  }
+  #preloader h1{
+    right: calc(20%);
   }
 }
 
