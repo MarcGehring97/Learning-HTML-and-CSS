@@ -969,6 +969,9 @@ footer li {
     position:relative;
     right: 80px;
   }
+  #preloader h1{
+    right: calc(25%);
+  }
 }
 
 /*Animations*/
