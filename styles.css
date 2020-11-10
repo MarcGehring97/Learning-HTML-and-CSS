@@ -843,7 +843,7 @@ footer li {
     padding-top: 5%;
   }
   #preloader h1{
-    right: calc(27%);
+    right: calc(30%);
   }
 }
 
@@ -886,7 +886,7 @@ footer li {
     right: 80px;
   }
   #preloader h1{
-    right: calc(20%);
+    right: calc(25%);
   }
 }
 
@@ -922,6 +922,9 @@ footer li {
     height: auto;
     position:relative;
     right: 80px;
+  }
+  #preloader h1{
+    right: calc(20%);
   }
 }
 
@@ -970,7 +973,7 @@ footer li {
     right: 80px;
   }
   #preloader h1{
-    right: calc(25%);
+    right: calc(30%);
   }
 }
 
