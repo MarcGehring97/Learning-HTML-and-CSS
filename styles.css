@@ -229,16 +229,19 @@ footer li {
   background-size: cover;
   min-height: 800px;
   background-position: bottom;
+  
 }
 
 #section_a_0 div {
   padding-top: 5%;
+  
 }
 
 #section_a_0 h2 {
     width:70%;
     font-size: 3rem;
     color: white;
+    
 }
 
 #section_a_0 h4 {
@@ -590,6 +593,182 @@ footer li {
 /*Responsiveness*/
 /*Responsiveness*/
 
+@media all and (max-width: 3100px) {
+  html {
+    font-size: 30px;
+  }
+  #section_a_0 {
+    min-height: 600px;
+  }
+  nav a {
+    font-size: 0.95rem;
+    text-align: right;
+  }
+  #Filler1, #Filler2, #Filler3 {
+    font-size: 2rem;
+  }
+  footer h3 {
+  padding-top: 550px;
+  }
+  footer h1 {
+    margin-top: 5%;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
+  }
+  #navrow {
+    padding-bottom: 30%;
+    padding-top: 3%;
+  }
+  #section_a_0 h4 {
+    margin-right: 20%;
+  }
+  #section_a_3 p {
+    font-size: 1.1rem;
+  }
+  #preloader h1{
+    right: calc(38%);
+  }
+}
+
+@media all and (max-width: 2100px) {
+  html {
+    font-size: 26px;
+  }
+  #section_a_0 {
+    min-height: 600px;;
+  }
+  nav a {
+    font-size: 0.95rem;
+    text-align: right;
+  }
+  #Filler1, #Filler2, #Filler3 {
+    font-size: 2rem;
+  }
+  footer h3 {
+  padding-top: 550px;
+  }
+  footer h1 {
+    margin-top: 5%;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
+  }
+  #navrow {
+    padding-bottom: 30%;
+    padding-top: 3%;
+  }
+  #section_a_0 h4 {
+    margin-right: 20%;
+  }
+  #section_a_3 p {
+    font-size: 1.2rem;
+  }
+  #preloader h1{
+    right: calc(36%);
+  }
+}
+
+@media all and (max-width: 1600px) {
+  html {
+    font-size: 28px;
+  }
+  #section_a_0 {
+    min-height: 600px;
+  }
+  nav a {
+    font-size: 0.95rem;
+    text-align: right;
+  }
+  #Filler1, #Filler2, #Filler3 {
+    font-size: 2rem;
+  }
+  footer h3 {
+  padding-top: 550px;
+  }
+  footer h1 {
+    margin-top: 5%;
+  }
+  #section_a_0 h4 {
+    margin-right: 20%;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
+  }
+  #navrow {
+    padding-top: 5%;
+  }
+  footer {
+    height: 800px;
+  }
+  
+  footer h1 {
+    margin-top: -3%;
+  }
+  #section_a_3 p {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  footer {
+    height: 700px;
+  }
+  
+  footer h1 {
+    margin-top: -3%;
+  }
+  #section_a_3 p {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  footer h1 {
+    margin-top: -5%;
+  }
+  #section_a_3 p {
+    font-size: 1.3rem;
+  }
+  
+}
+
+
+@media all and (max-width: 1250px) {
+  footer {
+    height: 650px;
+  }
+  
+  footer h1 {
+    margin-top: -5%;
+  }
+  #section_a_3 p {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 1150px) {
+  footer {
+    height: 950px;
+  }
+  footer h1 {
+    margin-top: -5%;
+  }
+  #section_a_3 p {
+    font-size: 1.3rem;
+  }
+}
+
+
 @media all and (max-width: 1100px) {
   html {
     font-size: 18px;
@@ -607,12 +786,54 @@ footer li {
   footer h3 {
   padding-top: 550px;
   }
+  footer h1 {
+    margin-top: 2%;
+  }
   .bearpic {
     width: 12rem;
     height: auto;
     position:relative;
     right: 80px;
   }
+  #navrow {
+    padding-top: 5%;
+  }
+}
+
+
+@media all and (max-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+  #section_a_0 {
+    min-height: 600px;
+  }
+  nav a {
+    font-size: 0.95rem;
+    text-align: right;
+  }
+  #Filler1, #Filler2, #Filler3 {
+    font-size: 2rem;
+  }
+  footer h3 {
+  padding-top: 550px;
+  }
+  footer h1 {
+    margin-top: 5%;
+  }
+  #section_a_0 h4 {
+    margin-right: 20%;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
+  }
+  #programming {
+    padding-top: 5%;
+  }
+  
 }
 
 @media all and (max-width: 800px) {
@@ -632,8 +853,12 @@ footer li {
   footer h3 {
     padding-top: 570px;
   }
+  footer h1 {
+    margin-top: 10%;
+  }
   #section_a_0 h4 {
     padding-top: 10%;
+    margin-right: 20%;
   }
   #spotify {
     text-align: center;
@@ -672,7 +897,7 @@ footer li {
     margin-right: 30%;
   }
   #section_a_0 h4 {
-    padding-top: 10%;
+    margin-right: 10%;
   }
   #spotify {
     text-align: center;
@@ -697,7 +922,8 @@ footer li {
     font-size: 0.8rem;
   }
   #section_a_0 div {
-    padding-bottom: 100px;
+    
+    padding-bottom: 60px;
   }
   footer h1 {
     margin-top: 10%;
@@ -717,6 +943,7 @@ footer li {
   }
   #section_a_0 h4 {
     padding-top: 10%;
+    margin-right: 10%;
   }
   #spotify {
     text-align: center;
