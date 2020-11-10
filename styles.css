@@ -501,8 +501,8 @@ footer li {
 
 }
 .bearpic {
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: auto;
 }
 .section_text {
   text-align: left;
@@ -600,8 +600,10 @@ footer li {
   padding-top: 550px;
   }
   .bearpic {
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
   }
 }
 
@@ -630,8 +632,14 @@ footer li {
     display: block;
   }
   .bearpic {
-    width: 6rem;
-    height: 6rem;
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
+  }
+  .descriptions {
+    position:relative;
+    right: 80px;
   }
 }
 
@@ -661,6 +669,12 @@ footer li {
   #spotify {
     text-align: center;
     display: block;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
   }
 }
 
@@ -699,6 +713,12 @@ footer li {
   #spotify {
     text-align: center;
     display: block;
+  }
+  .bearpic {
+    width: 12rem;
+    height: auto;
+    position:relative;
+    right: 80px;
   }
 }
 
