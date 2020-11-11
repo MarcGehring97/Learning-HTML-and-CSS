@@ -632,6 +632,12 @@ footer li {
   #preloader h1{
     right: calc(38%);
   }
+  .progress {
+    font-size: 0.5rem;
+  }
+  #productivity {
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media all and (max-width: 2100px) {
@@ -672,6 +678,9 @@ footer li {
   }
   #preloader h1{
     right: calc(36%);
+  }
+  .progress {
+    font-size: 0.5rem;
   }
 }
 
@@ -716,17 +725,23 @@ footer li {
   #section_a_3 p {
     font-size: 1.3rem;
   }
+  .progress {
+    font-size: 0.5rem;
+  }
+  
 }
 @media all and (max-width: 1450px) {
   footer {
     height: 700px;
   }
-  
   footer h1 {
     margin-top: -3%;
   }
   #section_a_3 p {
     font-size: 1.3rem;
+  }
+  .progress {
+    font-size: 0.5rem;
   }
 }
 @media all and (max-width: 1300px) {
@@ -739,7 +754,9 @@ footer li {
   #preloader h1{
     right: calc(28%);
   }
-  
+  .progress {
+    font-size: 0.5rem;
+  }
 }
 
 
@@ -757,6 +774,9 @@ footer li {
   #preloader h1{
     right: calc(29%);
   }
+  .progress {
+    font-size: 0.5rem;
+  }
 }
 
 @media all and (max-width: 1150px) {
@@ -771,6 +791,12 @@ footer li {
   }
   #preloader h1{
     right: calc(30%);
+  }
+  .progress {
+    font-size: 0.5rem;
+  }
+  .skills-content h6 {
+    font-size: 10rem;
   }
 }
 
@@ -807,6 +833,9 @@ footer li {
   #preloader h1{
     right: calc(30%);
   }
+  #productivity {
+    padding-bottom: 0rem;
+  }
 }
 
 
@@ -839,13 +868,18 @@ footer li {
     position:relative;
     right: 80px;
   }
-  #programming {
-    padding-top: 5%;
-  }
   #preloader h1{
     right: calc(30%);
   }
 }
+
+@media all and (max-width: 991px) {
+  #programming {
+    padding-top: 5%;
+  }
+}
+
+
 
 @media all and (max-width: 800px) {
   html {
