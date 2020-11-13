@@ -343,11 +343,18 @@ footer li {
   color: #FDD15B !important;
 }
 
+/*About*/
+/*About*/
+/*About*/
+/*About*/
 
-/*About*/
-/*About*/
-/*About*/
-/*About*/
+input[type='checkbox'] { display: none; } 
+.lbl-toggle { display: block;  font-size: 1.2rem;  text-align: center;  color: black;  cursor: pointer;  } 
+.lbl-toggle:hover { color: rgb(110, 107, 107); } 
+.lbl-toggle::before { content: ' '; display: inline-block; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 10px solid #FDB515; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out; } 
+.toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } .collapsible-content { max-height: 0px; overflow: hidden; transition: max-height .25s ease-in-out; } 
+.toggle:checked + .lbl-toggle + .collapsible-content { max-height: 10000px; } .toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } 
+
 
 #articles a {
   color: #003262; 
