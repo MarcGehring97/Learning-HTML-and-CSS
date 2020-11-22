@@ -199,6 +199,17 @@
                   <li>Best practice in Java: use immutable types</li>
                   <li>1d range search: find the values in an interval / find the number of values in an interval; BST is a solution</li>
                   <li>Sweep-line algorithm: find intersections between vertical and horizontal line segments; uses 1d range search</li>
+                  <li>2d orthogonal range search: find the values in an rectangular range (searching in geometric data); search by two variables; clustering problem => space-partitioning trees; search typically takes R+log(N), worst case R*sqrt(N) (R: number of intersections); can also be used to find closest point in plane; typical case then log(N) and worst case N</li>
+                  <li>Kd trees use the same ideas</li>
+                  <li>Kd Interval search: search for intervals</li>
+                  <li>Orthogonal rectangle intersection search: sweep-line algorithm reduces to 1s interval search</li>
+                  <li>Hashing: different data structure; issues of dealing with collisions => different solutions</li>
+                  <ul>
+                    <li>Separate chaining (looking inside bucket); if size of array smaller than the number of keys</li>
+                    <li>If number of keys greater than size of array => linear probing; better to have fewer keys in comparison to size of array, because at the end the hashing takes many computation (clustering) => array resizing to make sure that the array is always half-full => constant-time performance</li>
+                  </ul>
+                  <li>Computational cost increases with the length of the keys => simplifications</li>
+                  <li>Many improved versions</li>
                 </ul>
                 </div>
               </div>
