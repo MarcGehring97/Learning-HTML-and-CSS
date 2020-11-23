@@ -140,7 +140,7 @@
                 <div class="content-inner">
                 <ul>
                   <li>Programs are in Java; log(N) usually means log2(N)</li>
-                  <li>Eager algorithm & binary search algorithm; empirically determine complexity by running a regression</li>
+                  <li>Eager algorithm & binary search algorithm; if you cannot determine complexity by computation, empirically determine complexity by running a regression</li>
                   <li>Algorithm complexity (running time vs number of calculations)</li>
                   <li>Running time and memory requirements</li>
                   <li>Stacks: a fundamental data structure, that represents ordered data points</li>
@@ -148,15 +148,15 @@
                     <li>Two ways to access: LIFO or FIFO</li>
                     <li>Stack implementation: linked-list or array; represents LIFO approach (queues represent FIFO method)</li>
                     <li>Disadvantage of array in Java: you have to define the capacity beforehand (chance of stack overflow)</li>
-                    <ul><li>Double array size when the array is full; halve size when array is 1/4-full</li></ul>
+                    <ul><li>Dynamic sizing: double array size when the array is full; halve size when array is 1/4-full</li></ul>
                     <li>Generic stack (handle multiple types of data with one implementation; only possible with the linked-list implementation, ignoring casting)</li>
-                    <li>Java collections library: java.util.stack (cannot predict performance; understand performance characteristics)</li>
+                    <li>Java collections library: java.util.stack (cannot predict performance; important to understand performance characteristics)</li>
                     <li>Dijkstra’s two-stack algorithm (low-level algorithm; operand (value) stack and operator stack; ignore left parenthesis, apply last operation between last two operands when facing right parenthesis)</li>
                   </ul>
                   <li>Sorting algorithms</li>
                   <ul>
                     <li>Java comparable interface => no dependence on date type; define different modes of sorting</li>
-                    <li>Different sort methods: Compare and swap</li>
+                    <li>Different sort methods: compare and swap</li>
                     <ul>
                       <li>Selection sort: ~N²/2 compares and ~N swaps (exchanges); has to go through all data points even when list is partially sorted</li>
                       <li>Insertion sort: ~N²/4 compares and ~N²/4 swaps; best case, N-1 compares and 0 swaps (ascending order); worst case, ~N²/2 compares  and ~n²/2 swaps => partially sorted helps (runs in linear time)</li>
@@ -169,7 +169,7 @@
                     <li>Optimal algorithm: Upper bound of operation counts equals lower bound; mergesort is an optimal algorithm with respect to number of compares, but not with respect to space usage</li>
                     <li>Sort stability (multidimensional arrays): a stable sort preserves the relative order of items with equal keys; insertion sort and mergesort are stable because there are no “long-distance” swaps</li>
                     <li>Quicksort: shuffle and then partition; recursion; advantage over mergesort: doesn’t take any extra space; best case ~Nlog(N), worst case N²/2 (also depends on initial shuffle);  average number of comparisons = 1.39Nlog(N) => 39% more compares than merge sort, but faster because of less data movement; the random shuffle at the beginning guarantees against the worst case; not stable; leave small partitions unsorted to be picked up with insertion sort at the end (see below)</li>
-                    <li>Combine different sorting algorithms to capitalise in their strengths (insertion sort for a partially sorted array that has been sorted by merge sort, for example)</li>
+                    <li>Combine different sorting algorithms to capitalize in their strengths (insertion sort for a partially sorted array that has been sorted by merge sort, for example)</li>
                     <li>Some algorithms have too much overhead; use insertion sort for arrays of length <= between 10 and 20 (improves other sorting algorithms)</li>
                     <li>With duplicate keys: algorithm goes quadratic unless partitioning stops on equal keys => stop scans on items equal to the partitioning item or 3-way partitioning (can turn quicksort linear</li>
                     <li>Shuffling: Orders data randomly; </li>
@@ -192,9 +192,9 @@
                     <li>Event-driven simulations: write efficient collision code; when a time interval is small you need many computation, when a time interval is large you might miss collisions => solution: focus on times when collisions by predicting the collisions (in general, the event) occurs; record all possible collisions in a priority queue; make new prediction after each event</li>
                   </ul>
                   <li>Symbol table (data structure): similar to python dictionary?</li>
-                  <li>Binary search tree (BST): Search and insert algorithm for symbol tables; a binary tree in symmetric order; constant time over different operations (e.g. search, insert, max, etc.), namely h (height of tree, proportional to log(N) if keys inserted in random order); efficient alternative to sequential search and binary search; in case of deletion leave the key in the tree (“tombstone”), value to null; deletion of minimum value possible; Hibbard deletion deletes a node entirely (runs in sqrt(N) time))</li>
+                  <li>Binary search tree (BST): Search and insert algorithm for symbol tables; a binary tree in symmetric order; constant time over different operations (e.g. search, insert, max, etc.), namely h (height of tree, proportional to log(N) if keys inserted in random order); efficient alternative to sequential search and binary search; in case of deletion leave the key in the tree (“tombstone”), value to null; deletion of minimum value possible; Hibbard deletion deletes a node entirely (runs in sqrt(N) time)</li>
                   <li>2-3 tree: recursive; Ofer each transformation maintains perfect balance and symmetric order; every path has the same length; worst case, log(N); best case, 0.631log(N); guaranteed logarithmic time</li>
-                  <li>Red-black BST: Represents 2-3 trees as a BST; maintains symmetric order and perfect black balance; 1-1 correspondence with 2-3 trees; the longest path can be no more than twice as long as the shortest path => balance; height of tree is <=2log(N) in worst case; are widely used as system symbol tables</li>
+                  <li>Red-black BST: Represents 2-3 trees as a BST; maintains symmetric order and perfect black balance; 1-1 correspondence with 2-3 trees; the longest path can be no more than twice as long as the shortest path => balance; height of tree is <= 2log(N) in worst case; are widely used as system symbol tables</li>
                   <li>B-tree: Generalize 2-3 trees</li>
                   <li>Best practice in Java: use immutable types</li>
                   <li>1d range search: find the values in an interval / find the number of values in an interval; BST is a solution</li>
