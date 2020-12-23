@@ -227,6 +227,74 @@
                 <ul>
                   <li>Algorithms can be simple, but simple algorithms often take too long => creativity to come up with simpler solutions</li>
                   <li>Fibonacci algorithms</li>
+                  <ul>
+                    <li>emma: Fn >= 2^(n/2) for n >= 6 (proof by induction)</li>
+                    <li>Running time in terms of required computations</li>
+                    <li>Recursive algorithms needs at least as many computations as the to be computed Fibonacci number => red flag</li>
+                    <li>The reason are repeated computations (Fn = Fn-1 + Fn-2 = Fn-2 + Fn-3 + Fn-2 = …)</li>
+                    <li>Solution: store results; compute current number as sum of the two previously saved numbers</li>
+                  </ul>
+                  <li>Greatest Common Divisor algorithms</li>
+                  <ul>
+                    <li>A variable “d” divides both numerator “a” and denominator “b”; d has to be as large as possible</li>
+                    <li>Important for number theory and cryptography (primes numbers)</li>
+                    <li>Naive algorithm runs through for-loop a + b times</li>
+                    <li>Key lemma: a’ is the remainder when a is divided by b, then gcd(a, b) = gcd(a’, b) = gcd(b, a’)</li>
+                    <li>Solution: recursive call for remainder of division, but in reverse order: gcd(b, a’)</li>
+                    <li>Takes log(ab) steps</li>
+                  </ul>
+                  <li>Defining runtime</li>
+                  <ul>
+                    <li>Lines of code are not comparable in runtime</li>
+                    <li>Run time depends on many factors (system architecture, program structure)</li>
+                    <li>Assumption: all of these factors can multiply runtimes by (large) constants => find a measure that ignores the constants</li>
+                    <li>Solution: Asymptotic notation => how does runtime scale with input size</li>
+                    <li>log(n) < sqrt(n) < n < nlog(n) < n² < n^n</li>
+                    <li>Big-O notation is simpler and cleaner (no base for logarithm); can ignore complicated details; is an upper bound</li>
+                    <li>f(n) = O(g(n)): f(n) grows no faster than g(n)</li>
+                    <li>Drawbacks of Big-O include that it loses important information about constant multiples and that it’s only  asymptotic (for very large inputs)</li>
+                    <li>The last fib algorithm took O(n²)</li>
+                    <li>Further notations for lower bounds, etc.</li>
+                    <li>Logarithmic rules I was unfamiliar with: a^(logb(c)) = c^(logb(a)) and loga(n) * logb(a) = logb(n)</li>
+                    <li>Levels of algorithms design: naive algorithm => algorithm by way of standard tools => optimised algorithm => magic algorithm</li>
+                    <li>Find the n last digits of a number: number % 10^n</li>
+                    <li>Pisano Period</li>
+                  </ul>
+                  <li>Greedy algorithms</li>
+                  <ul>
+                    <li>Reduction into subproblems</li>
+                    <li>Safe move if there is an optimal solution consistent with this first move</li>
+                    <li>Make a greedy choice => check that it’s a safe move => reduce to subproblem</li>
+                  </ul>
+                  <li>Divide and conquer algorithms</li>
+                  <ul>
+                    <li>Divide the big problems in smaller subproblems of the same type that do not overlap</li>
+                    <li>Solution: recursion using the same strategy</li>
+                    <li>Linear search runs in linear time</li>
+                    <li>Binary search works for sorted arrays and runs in log(n)</li>
+                    <li>Different algorithms to multiply polynomials </li>
+                    <li>The Master Theorem allows to figure out easily the running time</li>
+                    <li>Selection sort: find minimum in list and put in front; takes the same time for all input data; quadratic running time</li>
+                    <li>Merge sort: a divide and conquer algorithm; comparison based; runs in  nlog(n) time</li>
+                    <li>Non-comparison based sorting algorithms: Count sort counts occurrence of all different numbers and the list them consecutively; requires 3 loops</li>
+                    <li>Quick sort: runs in different times for more or less sorted data; select the pivot element randomly guarantees an average running time nlog(n); bad for data sets that contain few unique elements => 3-way partition; deterministic version involves using the median as the pivot</li>
+                    <li>Combine different sorting algorithms to leverage different performance strengths</li>
+                  </ul>
+                  <li>Dynamic programming</li>
+                  <ul>
+                    <li>Not a form of programming but a type of algorithm</li>
+                  </ul>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-collabsible">
+              <input id="collapsible9" class="toggle9" type="checkbox">
+              <label for="collapsible9" class="lbl-toggle9"><a href="https://www.coursera.org/learn/data-structures">Data Structures</a></label>
+              <div class="collapsible-content9">
+                <div class="content-inner">
+                <ul>
+                  <li>Arrays</li>
                 </ul>
                 </div>
               </div>
