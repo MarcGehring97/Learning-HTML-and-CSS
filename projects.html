@@ -296,6 +296,150 @@
                 <div class="content-inner">
                 <ul>
                   <li>Arrays</li>
+                  <ul>
+                    <li>Constant-time access to any element</li>
+                    <li>Row-major or column-major representation</li>
+                    <li>Are good if you want to add or remove at the end (operations require O(1)), but expensive elsewhere (O(n))</li>
+                  </ul>
+                  <li>Linked list</li>
+                  <ul>
+                    <li>Operations at front and end</li>
+                    <li>Head and tail pointers to quickly identify front and back nodes </li>
+                    <li>Some operations run in constant time (O(1)) and some in linear time (O(n))</li>
+                  </ul>
+                  <li>Double-linked list</li>
+                  <ul>
+                    <li>Not only “next pointer” but also “previous pointer” => go forward OR go backward</li>
+                    <li>Solves the performance issues of tail operations</li>
+                  </ul>
+                  <li>Stacks</li>
+                  <ul>
+                    <li>Only operations at the top</li>
+                    <li>Implementation with array or linked list (pros and cons for each)</li>
+                    <li>LIFO: last one inserted is the first one that comes out</li>
+                  </ul>
+                  <li>Queues</li>
+                  <ul>
+                    <li>FIFO</li>
+                    <li>Implementation with array or linked list</li>
+                  </ul>
+                  <li>Tree</li>
+                  <ul>
+                    <li>Nodes have a key and child trees</li>
+                    <li>Tree traversal</li>
+                    <ul>
+                      <li>depth-first => stack (if iteratively) or breadth-first => queue</li>
+                    </ul>
+                  </ul>
+                  <li>Dynamic arrays</li>
+                  <ul>
+                    <li>Problem: array size cannot be changed</li>
+                    <li>Mechanism: once capacity has been reached, create a new array, copy existing values, update the array pointer, and ease the old array</li>
+                  </ul>
+                  <li>Amortized cost: average cost (because for some insertions we have to resize and for some we don’t)</li>
+                  <li>Priority queue</li>
+                  <ul>
+                    <li>Generalization of queue where each element is assigned a priority for extractions</li>
+                    <li>Using a sorted or an unsorted array, either inserting or extracting runs in O(n) and the other in O(1)</li>
+                  </ul>
+                  <li>Binary heaps</li>
+                  <ul>
+                    <li>Binary max-heap: the value of each note is greater equal to its children</li>
+                    <li>A complete binary tree has full levels except the last one (filled from left to right)</li>
+                    <li>Trees make operations cheaper, but keeping the tree structure implies extra costs (swap operations) => trade-off</li>
+                    <li>Operations work in O(log(n))</li>
+                    <li>Allows heap sort</li>
+                    <ul>
+                      <li>A natural generalisation of selection sort </li>
+                      <li>O(nlog(n))</li>
+                      <li>In-place => does not require additional memory (no need to remember parent and children elements)</li>
+                    </ul>
+                  </ul>
+                  <li>Disjoint-set data structure</li>
+                  <ul>
+                    <li>Operations: MakeSet, Find, and Union</li>
+                    <li>Building networks</li>
+                    <li>Efficient implementation: represent each set as a tree</li>
+                    <li>Union: attach smaller tree to root of larger tree => height stays unchanged (unless trees have same height)</li>
+                    <li>Compress tree to reduce height</li>
+                  </ul>
+                  <li>Hashing</li>
+                  <ul>
+                    <li>Implementation of hash tables in Python: dictionary</li>
+                    <li>Useful in cryptography</li>
+                    <li>Log processing (counting websites visits)</li>
+                    <ul>
+                      <li>Direct addressing implementation</li>
+                      <ul>
+                        <li>Idea: Convert key into an integer and use a standard array to store the values</li>
+                        <li>Convert key into binary and translate from binary to an integer</li>
+                        <li>Good runtime but weak memory usage => usually unfeasible</li>
+                      </ul>
+                      <li>List-based mapping</li>
+                      <ul>
+                        <li>Only storing active in a list</li>
+                        <li>Memory efficient, but still flawed</li>
+                      </ul>
+                      <li>More general and efficient mapping: hash function</li>
+                      <ul>
+                        <li>Maps to numbers from 0 n - 1 (length of input list, called cardinality)</li>
+                        <li>Collisions: Different objects are assigned the same value </li>
+                        <li>Chaining: an array of lists consisting of pairs (IP address and counter)</li>
+                        <ul>
+                          <li>A common implementation of a hash table</li>
+                          <li>Avoids collisions by chaining a new pair to an existing list </li>
+                          <li>Better implementation in terms of runtime and memory consumption</li>
+                        </ul>
+                      </ul>
+                    </ul>
+                    <li>A set is a data structure with three methods: add, remove, and find</li>
+                    <ul>
+                      <li>Python: set = set; map = dictionary</li>
+                    </ul>
+                    <li>Hash table: any implementation of a set or map that uses hashing (a hash function)</li>
+                    <li>Hash functions</li>
+                    <ul>
+                      <li>Avoid collisions as much as possible to reduce chain length</li>
+                      <li>Different approaches (f.e. first three digits of a phone number)</li>
+                      <li>Characteristic of good has functions</li>
+                      <ul>
+                        <li>Fast to compute</li>
+                        <li>Deterministic</li>
+                        <li>Distributes keys well into different cells (in the chaining implementation)</li>
+                        <li>Few collisions</li>
+                      </ul>
+                      <li>There is no universal hash function</li>
+                      <li>Random hashing desirable to distribute keys evenly (like for quick sort) but hash function must be deterministic to be able to look up values repeatedly</li>
+                      <ul>
+                        <li>Solution: choose a random hash function from a universe of hash functions (with the same cardinality)</li>
+                        <li>The probability between the functions on that universe should be small</li>
+                        <li>Example of universal family: ((ax + b) mod p) mod m) with a, b: 1 <= a <= p - 1, 0 <= b <= p - 1 and m is the cardinality and p a prime number</li>
+                        <li>Choose a and b randomly</li>
+                      </ul>
+                      <li>Hash a string by first converting the letters into integers and then using polynomial hash functions</li>
+                    </ul>
+                  </ul>
+                  <li>Binary search tree</li>
+                  <ul>
+                    <li>Hash tables are a weak data structure for searching</li>
+                    <li>Similarly, arrays, sorted arrays,  linked lists, and sorted linked lists all have merits and drawbacks (runtime of rangesearch, nearestneighbors, insert, and delete)</li>
+                    <li>A sorted array with binary search seems most promising => the binary search tree builds on this idea</li>
+                    <li>Find is proportional to depth of the tree; depth can be as big as n</li>
+                    <li>Solution: maintain tree balance after every insertion and deletion by “rotation” => maximum depth of log2(n)</li>
+                    <li>AVL trees</li>
+                    <ul>
+                      <li>Specific way to maintain balance in binary search trees</li>
+                      <li>Store height among other information</li>
+                      <li>Maintain balance by controlling subtree heights</li>
+                      <li>AVL property apply to all nodes N: |N.Left.Height - N.Right.Height| <= 1</li>
+                      <li>This ensures that the depth cannot be bigger than n</li>
+                    </ul>
+                    <li>Another example of a binary search tree implementation that maintains balance: splay tree</li>
+                    <ul>
+                      <li>Common nodes near root</li>
+                      <li>Adaptive definition of common nodes</li>
+                    </ul>
+                  </ul>
                 </ul>
                 </div>
               </div>
