@@ -491,6 +491,98 @@
                 </div>
               </div>
             </div>
+            <div class="wrap-collabsible">
+              <input id="collapsible11" class="toggle11" type="checkbox">
+              <label for="collapsible11" class="lbl-toggle11"><a href="https://www.coursera.org/learn/algorithms-on-strings">Algorithms on Strings</a></label>
+              <div class="collapsible-content11">
+                <div class="content-inner">
+                  <ul>
+                    <li>Examples of algorithms on strings</li>
+                    <ul>
+                      <li>DNA as string ⇒ compare DNA of different species</li>
+                      <li>Search engines, text editors, antivirus and network intrusion detection, version control system</li>
+                    </ul>
+                    <li>Finding the position of patterns in a text</li>
+                    <ul>
+                      <li>Brute force algorithm has a long running time</li>
+                      <li>TrieMatching algorithm for matching strings; Running time is O(len(text) * len(longest pattern)); Not "strong" enough to process genome data</li>
+                      <li>SuffixTrie algorithm: Put the target text in a tree and store the position of the suffix at the end of each respective suffix; Still has weak memory usage</li>
+                      <li>Suffix Tree algorithm: Compress the different string nodes into string nodes (we can create an algorithms that runs in linear time)</li>
+                    </ul>
+                    <li>Compressing strings to minimize memory store: Burrows-Wheeler transform</li>
+                    <ul>
+                      <li>First transform the string using the Burrows-Wheeler transform to create repetitions and then compressing the string, f.e. "aaaabbbbbccccdd" to "4a5b4c2d"</li>
+                      <li>Inversion is a requirement: compression is easily invertible and BWT is also invertible</li>
+                      <li>Further improvements are possible</li>
+                    </ul>
+                    <li>Better pattern-matching algorithms</li>
+                    <ul>
+                      <li>Objective: return all positions in a text where a certain pattern appears</li>
+                      <li>Shift pattern along text by finding sub-matches, which is the longest match at the current position, and defining borders, which are sub-patterns that occur at the start and the beginning of the sub-match ⇒ this is a safe move (no risk of missing any matches)</li>
+                      <li>The prefix function lets us compute the length of the borders at each position</li>
+                      <li>Knuth-Morris-Pratt algorithms</li>
+                      <ul>
+                        <li>Arrange pattern+$+text and apply the prefix function and if the prefix function returns a number as large as the length of the pattern, we know that we have found a match at that position</li>
+                        <li>Runs in linear time (linear to length of the text plus length of the pattern)       </li>
+                      </ul>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-collabsible">
+              <input id="collapsible12" class="toggle12" type="checkbox">
+              <label for="collapsible12" class="lbl-toggle12"><a href="https://www.coursera.org/learn/advanced-algorithms-and-complexity">Advanced Algorithms and Complexity</a></label>
+              <div class="collapsible-content12">
+                <div class="content-inner">
+                  <ul>
+                    <li>Networks</li>
+                    <ul>
+                      <li>A network is a directed graph where each edge has a capacity and there are one or more sources and sinks</li>
+                      <li>The flow (what goes in and what comes out) must be conserved at each vertex</li>
+                      <li>How large a flow can we fit through a network?</li>
+                      <li>Try one path and compute a residual network where the used flows are included through opposite-directed edges</li>
+                      <li>Upper bound of the flow: the size of the "cut" ⇒ the maximum flow is equal to the minimum cut</li>
+                      <li>Ford-Fulkerson algorithm</li>
+                      <ul>
+                        <li>Find a path in the residual network and the added flow in the minimum capacity on the path, then apply the same on every new residual network until no new path can be found</li>
+                        <li>The choice of the path is not clarified</li>
+                        <li>Runs in O(#edges * size of maximum flow), but especially the size of the maximum flow constitutes a problem</li>
+                      </ul>
+                      <li>Edmonds-Karp algorithm</li>
+                      <ul>
+                        <li>Use the Ford-Fulkerson algorithm, but always choose the shortest (in terms of edges) path by bread-first search</li>
+                        <li>Runs in O(#vertices * #edges²)</li>
+                        <li>Could be better or worse than before depending on the specific problem</li>
+                        <li>There is a better algorithm that runs in O(#vertices * #edges)</li>
+                      </ul>
+                      <li>Bipartite matching, for example for match making or scheduling problems, can be solved with networks (flow problem)</li>
+                      <li>Another application is image segmentation (separate foreground from background)</li>
+                    </ul>
+                    <li>Linear programming problems</li>
+                    <ul>
+                      <li>Optimization problem for multiple variables and constraints</li>
+                      <li>Constraints and objective function can be put in matrix notations</li>
+                      <li>Network flow problems are a special case of linear programming problems</li>
+                      <li>It is possible to get no solution</li>
+                      <li>Depending on degree of freedom, the solution will be a subspace instead of just a number</li>
+                      <li>Solve the system of unknown with Gaussian elimination; the appropriate algorithm runs in O(#equations * #variables * min(#equations, #variables)) time</li>
+                      <li>The feasibility region in 2-dimensional space generalizes to a polytope in an n-dimensional space (n different variables) ⇒ the polytope has to be convex (there are no "dent" in the polytope)</li>
+                      <li>A maximum or minimum can only occur on a vertex (corner)</li>
+                      <li>Constraints are combinable: x1 + y1 ≥ z1; x2 + y2 ≥ z2 ⇒ x1 + x2 + y1 + y2 ≥ z1 + z2</li>
+                      <li>The Simplex algorithm (going through every edge) is the most common algorithm to solve the linear programming problem; There are some technical problems</li>
+                      <li>The Ellipsoid algorithm is a more "modern" algorithm</li>
+                    </ul>
+                    <li>Boolean satisfiability problems (SATs)</li>
+                    <ul>
+                      <li>To check which combination(s) of boolean variables satisfy certain functions</li>
+                      <li>SATs are search problems</li>
+                      <li>There are easy problems that become very hard by slightly changing the problem               </li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <!--
             <div class="wrap-collabsible">
               <input id="collapsible7" class="toggle7" type="checkbox">
