@@ -442,6 +442,55 @@
                 </div>
               </div>
             </div>
+            <div class="wrap-collabsible">
+              <input id="collapsible10" class="toggle10" type="checkbox">
+              <label for="collapsible10" class="lbl-toggle10"><a href="https://www.coursera.org/learn/algorithms-on-graphs">Data Structures</a></label>
+              <div class="collapsible-content10">
+                <div class="content-inner">
+                  <ul>
+                    <li>Graphs consists of collections of vertices and edges (to connect vertices)</li>
+                    <li>A loop connects a vertex with itself</li>
+                    <li>There a different ways to represent graphs:</li>
+                    <ul>
+                      <li>Store all edge tuples</li>
+                      <li>Adjacency matrix: 1 for edge between the two vertices and 0 otherwise</li>
+                      <li>Store the adjacent vertices for each vertex (f.e. as list)</li>
+                      <li>Different implementations have advantages in different operations</li>
+                    </ul>
+                    <li>Runtimes depend on the number of both vertices and edges ⇒ this leads to further complications and the optimal algorithm can depend on the graph density (edges/vertices)</li>
+                    <ul>
+                      <li>Dense: #E ~ #C²; sparse: #E ~#V</li>
+                    </ul>
+                    <li>Algorithms for exploring undirected graphs</li>
+                    <ul>
+                      <li>A path is a sequence of edges between two specific vertices</li>
+                      <li>Depth-first search: follow a long path until dead end ⇒ Find vertices that are reachable</li>
+                    </ul>
+                    <li>Reachability</li>
+                    <ul>
+                      <li>A graph can be partitioned into connected components ("island" sub-graphs that are only connected among themselves)</li>
+                    </ul>
+                    <li>Directed graphs, f.e. links between webpages, followers on social network, dependency relations</li>
+                    <li>A cycle is a sequence of vertices that built an overall loop; if a graph contains a cycle it cannot be linearly ordered</li>
+                    <li>Different notions of connectivity; connected means that you can reach a from b and b from a; strongly connected components are subgraphs that you can leave but you cannot return to or that you can get to but you cannot leave ⇒ possible to aggregate components of the subgraphs and then to just show the different subgraphs: "metagraph"</li>
+                    <li>Length of a path: number of edges</li>
+                    <li>Breadth-first search: processing a graph layer by layer</li>
+                    <li>Dijkstra's Algorithm to find the shortest path: always explore from the vertex with the shortest distance since this is the only vertex for which we know its distance with certainty; Works for positive weights only; Runtime depends on queue implementation</li>
+                    <li>Real-life application:</li>
+                    <ul>
+                      <li>Currency exchange: maximize the product of currency exchange rates ⇒ maximizing the product of x and y is the same as minimizing the negative sum of log(x) and log(y) ⇒ the problem becomes a shortest path problem ⇒ convert an exchange rate x to -log(x) ⇒ Dijkstra's Algorithm does no longer work since some weights have becomes negative ⇒ Bellman-Ford algorithms (assumes no negative weight cycles in the graph)</li>
+                      <li>Networks (connect a number of devices while minimizing total costs) ⇒ minimum spanning tree</li>
+                      <ul>
+                        <li>A tree is an undirected graph that is connected a acyclic ⇒ any connected, undirected graph  with #E = #V - 1 is a tree; also there has to be a path between any pair of vertices</li>
+                        <li>Kruskal's algorithm: repeated add the next lightest edge if this doesn't produce a cycle until all edges are connected; Running time of O(#E*log(#V)) (if sorting the edges still has to be done)</li>
+                        <li>Prim's algorithm: repeated attach a new vertex to the current tree by a lightest edge; similar running time and in detail depends on implementation (array-based, binary heap-based, etc.)</li>
+                        <li>Building roads</li>
+                      </ul>
+                    </ul>                    
+                  </ul>
+                </div>
+              </div>
+            </div>
             <!--
             <div class="wrap-collabsible">
               <input id="collapsible7" class="toggle7" type="checkbox">
