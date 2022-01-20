@@ -1,0 +1,8 @@
+test :: Int -> Int
+test x = 2  
+
+mapx :: (a -> b) -> [a] -> [b] 
+mapx g [] = []
+mapx g (x:xs) = g x : mapx g xs
+
+main = putStrLn . show $ map test [1,2, 0, 10,    1]
